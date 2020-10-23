@@ -1,1 +1,5 @@
-<p>counter-group works!</p>
+<div  *ngFor="let counter of counters">
+    <app-counter [counter]="counter"></app-counter>
+    <br>
+</div>
+<label>Sum the counter: <span id="total">{{sumResult}}</span> </label>
